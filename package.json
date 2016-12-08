@@ -1,0 +1,22 @@
+{
+  "name": "dobs1211",
+  "version": "1.0.0",
+  "description": "pet-match-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+  "test": "mocha"
+}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobs1211/pet-match-part-2.git"
+  },
+  "author": "olga chavez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobs1211/pet-match-part-2/issues"
+  },
+  "homepage": "https://github.com/dobs1211/pet-match-part-2#readme"
+}
