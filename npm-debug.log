@@ -1,33 +1,35 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node',
 1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm',
-1 verbose cli   'test' ]
+1 verbose cli   'install',
+1 verbose cli   'unirest' ]
 2 info using npm@2.15.9
 3 info using node@v4.6.1
-4 verbose stack Error: Failed to parse json
-4 verbose stack Unexpected token 'r' at 12:4
-4 verbose stack   "repository": {
-4 verbose stack    ^
-4 verbose stack     at parseError (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
-4 verbose stack     at parseJson (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
-4 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
-4 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-5 verbose cwd /home/ubuntu/workspace
-6 error Linux 4.2.0-c9
-7 error argv "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm" "test"
-8 error node v4.6.1
-9 error npm  v2.15.9
-10 error file /home/ubuntu/workspace/package.json
-11 error code EJSONPARSE
-12 error Failed to parse json
-12 error Unexpected token 'r' at 12:4
-12 error   "repository": {
-12 error    ^
-13 error File: /home/ubuntu/workspace/package.json
-14 error Failed to parse package.json data.
-14 error package.json must be actual JSON, not just JavaScript.
-14 error
-14 error This is not a bug in npm.
-14 error Tell the package author to fix their package.json file. JSON.parse
-15 verbose exit [ 1, true ]
+4 verbose install initial load of /home/ubuntu/workspace/package.json
+5 verbose stack Error: Failed to parse json
+5 verbose stack Unexpected token 'r' at 12:4
+5 verbose stack   "repository": {
+5 verbose stack    ^
+5 verbose stack     at parseError (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
+5 verbose stack     at parseJson (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
+5 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+5 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+6 verbose cwd /home/ubuntu/workspace
+7 error Linux 4.2.0-c9
+8 error argv "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm" "install" "unirest"
+9 error node v4.6.1
+10 error npm  v2.15.9
+11 error file /home/ubuntu/workspace/package.json
+12 error code EJSONPARSE
+13 error Failed to parse json
+13 error Unexpected token 'r' at 12:4
+13 error   "repository": {
+13 error    ^
+14 error File: /home/ubuntu/workspace/package.json
+15 error Failed to parse package.json data.
+15 error package.json must be actual JSON, not just JavaScript.
+15 error
+15 error This is not a bug in npm.
+15 error Tell the package author to fix their package.json file. JSON.parse
+16 verbose exit [ 1, true ]
