@@ -1,0 +1,290 @@
+/*
+The CSS code gets to executed from top to bottom and left ro right
+Basic rules to write CSS
+- write GENERAL rules first (for all the paragraph tags in the website for example) and only after that write CSS for SPECIFIC tags (for example the paragraph tags inside the footer)
+- write the css styles to define for the parent (outside) container and THEN the children (inside containers) of that parent and THEN the children (inside containers) of the child above
+*/
+
+
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+section.intro p {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-color: color: gray;
+    font-size: 15px;
+}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+section {
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-width: 20rem;
+    width: 60%;
+    margin-left: 400px;
+    margin-right: auto;
+  }
+
+
+button:hover {
+    background-color: #707070;
+}
+
+section.intro {
+    text-align: center;
+}
+
+section.questions,
+section.results {
+    display: none;
+}
+
+section.intro h1 {
+    font-size: 3rem;
+    font-family: 'Chewy', cursive;
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: -75%rem;
+    margin-right: 12rem;
+}
+
+section.questions h2,
+section.results h2 {
+    font-family: 'Montserrat', sans-serif
+    font-style: italic;
+}
+
+section.results h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.questions h2 {
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 35px;
+}
+
+section.questions h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+section.questions ul.answers {
+    list-style-type: none;
+    width: 84%;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+section.questions ul.answers li {
+    margin-left: 10%;
+}
+
+section.questions ul.answers li input {
+    margin-right: 1rem;
+}
+
+
+section.results {
+    text-align: center;
+}
+
+section {
+    margin-top: 3rem;
+    background-image: url(../public/images/BFTkQ.jpg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-width: 20rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.results > h3 {
+        font-family: 'Chewy', cursive;
+}
+
+section.results > h3,
+section.results > p,
+section.intro > p {
+    width: 75%;
+    margin: 0 auto;
+    margin-left: 3%;
+    margin-bottom: 30px;
+}
+
+section.results h4 {
+    border-top: 2px lightgray;
+    border-bottom: 2px lightgray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    width: 135%;
+}
+
+section.results ul {
+    text-align: left;
+    width: 200%;
+    margin: 2px auto;
+}
+
+header,
+section {
+    text-align: left;
+    margin-right: 50%;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.formGroup,
+li {
+    display: block;
+    margin: 2px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightgray;
+    margin-right: 60%;
+}
+
+.formGroup:last-child,
+li:last-child {
+    border: none;
+}
+
+label,
+select {
+    display: inline-block;
+}
+
+label {
+    width: 80%;
+}
+
+select {
+    float: right;
+}
+
+.button-primary {
+    background-color: orange;
+    border-color: orange;
+    border-radius: 8px;
+    border-style: none;
+    color: black;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    text-shadow: none;
+    width: 15%;
+    text-align: center;
+    margin-right: 20%;
+}
+
+.button,
+.output {
+    text-align: center;
+}
+
+
+/*map related styles*/
+
+#map {
+    width: 110%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+
+#addressInputHolder {
+    position: relative!important;
+}
+
+#addressInput {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 150px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+
+#addressInput:focus {
+    border-color: #4d90fe;
+}
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
+
+
+
+/* hover box example to keep
+.hoverbox {
+    position: absolute;
+    background: #ddd;
+    padding: 4px;
+    width: 200px;
+    display: none;
+}
+a:hover + .hoverbox, .hoverbox:hover { display: block }
+*/
