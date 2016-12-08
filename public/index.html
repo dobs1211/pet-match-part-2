@@ -1,0 +1,57 @@
+<!doctype html >
+<html lang="en" id="html" style="background: rgba(0, 0, 0, 0) url('../public/images/cover-photo.jpeg') no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dog Match</title>
+    <link rel="stylesheet" href="../public/css/scrollpath.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" charset="utf-8">
+</head>
+
+<body>
+    <!--starting the quiz-->
+    <section class="intro">
+        <h1>Dog Match</h1>
+        
+        <p>A place where you can find a canine friend best suited for you! You will be asked a series of questions. For each question, select the response that best applies to you.
+        </p>
+        <button id="startButton">Fetch!</button>
+    </section>
+
+    <section class="questions">
+        <h2 id="prompt"></h2>
+        <ul class="answers">
+        </ul>
+   </section>     
+        
+        <h3>Question <span class="count"></span> of <span class="totalCount"></span></h3>
+    </section>
+    
+    <section class="results">
+        <h2>Your selections: <span id="result"></span>%</h2>
+        <h3>Look at your scores and see if you picked mostly 1's, mostly 2's or mostly 3's.</h3>
+        <ul></ul>
+        <h4>Once you have looked over your selections you can see what you selected the most. <br>This will help determine what dog type fits you best.
+            <br />
+            If you picked mostly 1's: It looks like you would like to have a more active dog, one that has shorter hair (less shedding) and one that can be trained easily. <br>
+            Your choices are: xxx</br>
+            If you picked mostly 2's: It looks like you would like to have a dog that can occasionally go on walks and runs with you. Shedding doesn't bother you too much and some drool is ok! <br>
+            Your choices are: xxx</br>
+            If you picked mostly 3's: It looks like you would like to have a dog that is happy to be cuddling on the couch with you, no super active. You also don't mind the hair or shedding. You don't have too much room so your best choice is larger dog, or senior dog. <br>
+            Your choices are: </br>
+        </h4
+    </section>
+        
+    <!--finishing the quiz-->
+
+<!--connect data and quiz    -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="api.js"></script>
+    <script src="server.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
